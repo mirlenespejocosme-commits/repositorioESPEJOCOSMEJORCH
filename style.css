@@ -1,0 +1,96 @@
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Encabezado UPLA */
+.upla-header {
+    background-color: #003366; /* Azul institucional */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #ffcc00;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+/* Botones Interactivos */
+.btn-nav, .btn-git {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-nav {
+    background-color: #eee;
+    color: #555;
+}
+
+.btn-nav:hover {
+    background-color: #003366;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.btn-git {
+    background-color: #24292e;
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-git:hover {
+    background-color: #4078c0;
+    transform: scale(1.05);
+}
+
+/* Contenedores */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.grid-trabajos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.trabajo-item {
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
