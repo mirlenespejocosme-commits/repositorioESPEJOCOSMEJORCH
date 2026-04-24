@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil Profesional</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="upla-header">
+        <div class="header-content">
+            <img src="https://www.upla.edu.pe/wp-content/uploads/2021/07/logo-upla-escudo.png" alt="Logo UPLA" class="logo">
+            <h1>Universidad Peruana Los Andes</h1>
+        </div>
+    </header>
+
+    <nav>
+        <button onclick="scrollToSection('perfil')" class="btn-nav">Mi Perfil</button>
+        <button onclick="scrollToSection('trabajos')" class="btn-nav">Trabajos</button>
+        <button onclick="scrollToSection('tecnologias')" class="btn-nav">Git & GitHub</button>
+    </nav>
+
+    <main class="container">
+        <section id="perfil" class="section card">
+            <h2>Sobre Mí</h2>
+            <p>Hola, soy estudiante de <strong>Ingeniería de Sistemas e Informática</strong>. Actualmente enfocado en el desarrollo de software y la gestión de proyectos tecnológicos.</p>
+        </section>
+
+        <section id="trabajos" class="section card">
+            <h2>Mis Trabajos</h2>
+            <div class="grid-trabajos">
+                <div class="trabajo-item">Proyecto Java: Gestión de Datos</div>
+                <div class="trabajo-item">Branding: Galácticos JEES FC</div>
+                <div class="trabajo-item">Analizador Lógico</div>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="section card">
+            <h2>Dominio de Herramientas</h2>
+            <div class="tech-buttons">
+                <a href="https://github.com/" target="_blank" class="btn-git">GitHub</a>
+                <a href="#" class="btn-git">Repositorios Git</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
