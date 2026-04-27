@@ -71,27 +71,9 @@
     </main>
 
     <script>
-    function scrollToSection(id) {
-        // 1. Seleccionamos todas las secciones
-        const sections = document.querySelectorAll('.section');
-        
-        // 2. Las ocultamos todas quitando la clase 'active'
-        sections.forEach(section => {
-            section.classList.remove('active');
-        });
-
-        // 3. Mostramos solo la sección que coincide con el ID
-        const activeSection = document.getElementById(id);
-        activeSection.classList.add('active');
-        
-        // 4. Opcional: Volver arriba automáticamente al cambiar de pestaña
-        window.scrollTo(0, 0);
-    }
-
-    // Al cargar la página por primera vez, mostramos 'perfil'
-    document.addEventListener("DOMContentLoaded", function() {
-        scrollToSection('perfil');
-    });
-</script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
