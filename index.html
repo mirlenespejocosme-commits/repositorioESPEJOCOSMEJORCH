@@ -59,39 +59,22 @@
             <div class="grid-tech">
                 <div class="tech-item">
                     <h3><i class="fab fa-git-alt"></i> Git</h3>
-                    <p>Git es un sistema de control de versiones. Es un software que instalas en tu computadora para rastrear los cambios en tus archivos.</p>
+                    <p>Control de versiones local, manejo de ramas y comandos de terminal.</p>
                 </div>
                 
                 <div class="tech-item">
                     <h3><i class="fab fa-github"></i> GitHub</h3>
-                    <p>GitHub es una plataforma en la nube que aloja proyectos que utilizan Git. Es como un "Facebook" o "Google Drive" pero diseñado específicamente para programadores y código.</p>
+                    <p>Gestión de proyectos en la nube, colaboración y despliegue de repositorios.</p>
                 </div>
             </div>
         </section>
     </main>
 
-   <script>
-    function scrollToSection(id) {
-        // 1. Seleccionamos todas las secciones
-        const sections = document.querySelectorAll('.section');
-        
-        // 2. Las ocultamos todas quitando la clase 'active'
-        sections.forEach(section => {
-            section.classList.remove('active');
-        });
-
-        // 3. Mostramos solo la sección que coincide con el ID
-        const activeSection = document.getElementById(id);
-        activeSection.classList.add('active');
-        
-        // 4. Opcional: Volver arriba automáticamente al cambiar de pestaña
-        window.scrollTo(0, 0);
-    }
-
-    // Al cargar la página por primera vez, mostramos 'perfil'
-    document.addEventListener("DOMContentLoaded", function() {
-        scrollToSection('perfil');
-    });
-</script>
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
+
