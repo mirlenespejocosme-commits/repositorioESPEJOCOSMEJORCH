@@ -94,3 +94,18 @@ nav {
     border-radius: 8px;
     text-align: center;
 }
+/* Ocultar todas las secciones por defecto */
+.section {
+    display: none;
+}
+
+/* Clase para mostrar la sección activa */
+.section.active {
+    display: block;
+    animation: fadeIn 0.5s; /* Efecto suave al aparecer */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
